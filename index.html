@@ -3,15 +3,94 @@
   <head>
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title> CSS Assignment 3: Fonts, Grid, Responsive Design </title>
-  	<link href="https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro" rel="stylesheet">
-  	<link rel="stylesheet" href="css/main.css">
+  	<title>Riddles</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Source+Sans+Pro:600" rel="stylesheet">
+  	<link rel="stylesheet" href="css/styles.css">
   </head>
-</html>
 
 <body>
+  <header>
+
+    <h1>The Art of the Riddle</h1>
+
+    <nav>
+      <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#egg">Riddle 1</a></li>
+        <li><a href="#towel">Riddle 2</a></li>
+        <li><a href="#age">Riddle 3</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+  <article id="intro">
+    <section>
+      <h2>What is a riddle?</h2>
+
+      <p>A riddle is a statement or question or phrase having a double or veiled meaning, put forth as a puzzle to be solved. Riddles are of two types: enigmas, which are problems generally expressed in metaphorical or allegorical language that require ingenuity and careful thinking for their solution, and conundra, which are questions relying for their effects on punning in either the question or the answer.</p>
+
+      <p>Text copied from <a href="https://en.wikipedia.org/wiki/Riddle">Wikipedia</a></p>
+    </section>
+  </article>
+
+  <article id="egg">
+
+    <section class="text">
+      <h2>Riddle 1</h2>
+
+      <p>What do you have to break, before you can use?</p>
+
+    </section>
+
+    <section class="photo" id="eggpic">
+      <img src="images/question_mark.jpg" alt="picture of a question mark">
+      <p>Move mouse over image to reveal the answer.</p>
+
+      <p id=eggcap>Egg picture courtesy of <a href="https://pixabay.com/service/license/">Pixabay<a>.</p>
 
 
+      ? - license page: https://commons.wikimedia.org/wiki/File:Question_mark.svg
+      source page: https://commons.wikimedia.org/wiki/File:Question_mark.svg
+      -->
 
+
+    </section>
+
+  </article>
+
+  <article id="towel">
+
+
+    <section class="text">
+      <h2>Riddle 2</h2>
+
+      <p>What gets wetter as it dries?</p>
+
+      <p id="onclick">Click to here to reveal the answer.</p>
+      <p id="answer">A towel!</p>
+
+    </section>
+  </article>
+
+  <article id="age">
+
+    <section class="text">
+      <h2>Riddle 3</h2>
+      <p>What goes up but never comes down?</p>
+
+      <p>Click to reveal the answer.</p>
+      <p id="final"> Age!</p>
+
+    </section>
+  </article>
+</main>
+
+<footer>
+  <p>Made by Felipe De La Guerra</p>
+</footer>
+  <script src="js/scripts.js"></script>
 
 </body>
+</html>

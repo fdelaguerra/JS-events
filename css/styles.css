@@ -1,0 +1,100 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Merriweather", Garamond, Georgia, serif;
+    font-size: 100%;
+    background: #EEE;
+    color: #000;
+    margin: 0;
+}
+h1, h2, a {
+    font-family: "Source Sans Pro", "Franklin Gothic Medium", Futura, sans-serif;
+}
+h1 {
+    font-size:300%;
+    margin: 0 1.5rem;
+}
+img{
+  max-width: 426px;
+}
+article {
+  margin: 5rem;
+}
+main {
+  display: grid;
+  grid:
+  [intro-start] ". intro ." 300px
+  [riddle1-start] ". riddle1 ." 600px
+  [riddle2-start] ". riddle2 ." 300px
+  [riddle3-start] ". riddle3 ." 300px
+  / [sidebar] 1fr [main] 3fr [aside] 1fr;
+
+
+}
+
+header {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background: #3700B3;
+    color:#FFF;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    margin: 0;
+    margin-left: 1rem;
+}
+header a {
+        color: #FFF;
+}
+header a:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+#tagline {
+    font-style: italic;
+    font-size: 150%;
+}
+#onclick {
+    border: 1px solid #000;
+    padding: 1rem;
+}
+#intro {
+  grid-area: intro;
+}
+#egg {
+  grid-area: riddle1;
+}
+#towel {
+  grid-area: riddle2;
+}
+#age {
+  grid-area: riddle3;
+}
+#final {
+  border: 1px solid #000;
+}
+footer {
+  grid-area: footer;
+  background: #3700B3;
+  color:#FFF;
+  margin: 0;
+}
+/* Media Queries */
+@media screen and (max-width: 817px){
+  main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+}
